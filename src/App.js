@@ -4,7 +4,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Redirect
 } from "react-router-dom";
 import Inbox from './Inbox';
 import logo from './logo.svg';
@@ -16,7 +16,9 @@ function App() {
     <div>
       <Router>
         <Switch>
-          <Route exact path="/" component={Inbox}/>
+          <Route path="/">
+          <Redirect to="/inbox" />
+          </Route>
           <Route exact path="/inbox" component={Inbox}/>
         </Switch>		
       </Router>
