@@ -8,7 +8,16 @@ class Inbox extends Component {
     }
     render() { 
         return ( 
-            <div>Inbox</div>
+            <div>
+                <div className="page-header">
+
+                </div>
+                <div id="inboxContainer">
+                    <div className="taskCard">
+                        
+                    </div>
+                </div>
+            </div>
          );
     }
 }

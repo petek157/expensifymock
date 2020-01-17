@@ -16,10 +16,10 @@ function App() {
     <div>
       <Router>
         <Switch>
+        <Route exact path="/inbox" component={Inbox}/>
           <Route path="/">
-          <Redirect to="/inbox" />
+            <Redirect to="/inbox" />
           </Route>
-          <Route exact path="/inbox" component={Inbox}/>
         </Switch>		
       </Router>
     </div>

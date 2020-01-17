@@ -36,12 +36,24 @@
     color: white;
 }
 
+.nav ul li:hover {
+    background-color: rgba(0,0,0,.3);
+    line-height: 70px;
+    list-style: none;
+    color: white;
+}
+
 .nav ul li.active {
     background: rgba(93,133,151,.3);
 }
 
 .nav ul li a {
+    text-decoration: none;
+    color: white;
+}
 
+.nav ul li a:visited {
+    color: white;
 }
 
 li.active .link-icon {
@@ -67,12 +79,21 @@ li .link-icon {
     width: 100%;
 }
 
-#content {
+#app-content-wrapper {
     background-color: #eee;
 
     position: relative;
     margin-left: 230px;
+    padding-top: 72px;
     height: calc(100vh - 34px);
+}
+
+.app-content {
+    padding: 20px;
+}
+
+.taskCard {
+    margin-bottom: 10px;
 }
 
 #footer {
